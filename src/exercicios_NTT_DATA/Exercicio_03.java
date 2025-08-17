@@ -50,7 +50,6 @@ public class Exercicio_03 {
                 }
             } else {
                 System.out.println("Opção inválida.");
-                return;
             }
         } else {
             System.out.println("O segundo número deve ser maior que o primeiro.");
