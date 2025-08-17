@@ -57,12 +57,6 @@ public class Exercicio_03 {
 
         }
 
-
-            System.out.println();
-
-
-
-
     }
 
 
