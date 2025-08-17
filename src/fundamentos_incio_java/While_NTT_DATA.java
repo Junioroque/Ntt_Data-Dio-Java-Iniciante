@@ -1,3 +1,5 @@
+package fundamentos_incio_java;
+
 import java.util.Scanner;
 
 public class While_NTT_DATA {
