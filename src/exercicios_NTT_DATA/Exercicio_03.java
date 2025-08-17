@@ -22,27 +22,48 @@ public class Exercicio_03 {
         System.out.println("Digite outro numero maior que o primeiro: ");
         segundo = leitor.nextInt();
 
-        while (segundo > primeiro) {
 
-            for (int i = segundo; i >= primeiro; i--) {
-                if (opcao.equalsIgnoreCase("Par")) {
-                    if(i % 2 == 0) {
-                        System.out.println(i);
-                    } else if (opcao.equalsIgnoreCase("Impar")) {
-                        if(i % 2 != 0) {
-                            System.out.println(i);
-                        }
-                    } else {
-                        System.out.println("Opção inválida. Digite 'Par' ou 'Impar'.");
-                        break;
+
+        if(segundo > primeiro) {
+            System.out.println("Escolha uma opção: ");
+            System.out.println("1 - Par");
+            System.out.println("2 - Ímpar");
+            x = leitor.nextInt();
+
+            if (x == 1) {
+                opcao = "Par";
+                for (int i = segundo; i >= primeiro; i--) {
+                    if (i % 2 == 0) {
+                        System.out.print(i);
+                        System.out.print(" ");
                     }
-
                 }
-            }
 
-            x++;
+            } else if (x == 2) {
+                opcao = "Ímpar";
+
+                for (int i = segundo; i >= primeiro; i--) {
+                    if (i % 2 != 0) {
+                        System.out.print(i);
+                        System.out.print(" ");
+                    }
+                }
+            } else {
+                System.out.println("Opção inválida.");
+                return;
+            }
+        } else {
+            System.out.println("O segundo número deve ser maior que o primeiro.");
+
         }
 
 
+            System.out.println();
+
+
+
+
     }
+
+
 }
