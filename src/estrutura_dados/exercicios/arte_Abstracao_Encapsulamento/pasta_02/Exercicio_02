@@ -1,0 +1,13 @@
+Escreva um código onde controlamos as funções de um carro, ele deve ter as seguintes funções:
+   *Ligar o carro;
+   *Desligar o carro;
+   *Acelerar;
+   *Diminuir velociade;
+   *Virar para esquerda/direita;
+
+Siga as seguintes regras na implementação:
+   *Quando o carro for criado ele deve começar desligado, em ponto morto e com sua velocidade em 0;
+   *O carro desligado não pode realizar nenhuma função;
+   *Quando o carro fo acelerado ele deve incrementar 1km de sua velocidade (pode chegar no maximo a 200km);
+   *Quando diminuir a velocidade do carro ele deve decrementar 1km de sua velocidade (pode chegar o minímo a 0km);
+   *O carro deve possuir 6 machas, não deve ser prmitido pular uma machar do carro;
