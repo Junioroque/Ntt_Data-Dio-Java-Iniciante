@@ -11,3 +11,13 @@ Siga as seguintes regras na implementação:
    *Quando o carro fo acelerado ele deve incrementar 1km de sua velocidade (pode chegar no maximo a 200km);
    *Quando diminuir a velocidade do carro ele deve decrementar 1km de sua velocidade (pode chegar o minímo a 0km);
    *O carro deve possuir 6 machas, não deve ser prmitido pular uma machar do carro;
+   *A velocidade do carro deve respeitar os seguintes limites para cada velocidade:
+    -se o carro estiver na macha 0 (ponto morto) ele não pode acelerar
+    -se estiver na 1° macha sua velocidade pode estar entre 0km e 20km
+    -se estiver na 2° macha sua velocidade pode estar entre 21km e 40km
+    -se estiver na 3° macha sua velocidade pode estar entre 41km e 60km
+    -se estiver na 4° macha sua velocidade pode estar entre 61km e 80km
+    -se estiver na 5° macha sua velocidade pode estar entre 81km e 100km
+    -se estiver na 6° macha sua velocidade pode estar entre 101km e 120km
+   *O carro podera ser desligado se estiver em ponto morto (macha 0) a sua velocidade 0km;
+   *O carro só pode virar para esquerda/direita se sua velocidade for no mínimo 1km e no máximo 40km.
