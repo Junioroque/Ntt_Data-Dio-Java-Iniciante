@@ -1,8 +1,8 @@
 package herança_Polimorfismo.introducao;
 
-public class Employee {
+public sealed abstract class Employee permits Manager, Salesman {
     private String code;
-    private String nome;
+    private String name;
     private String address;
     private int age;
 
@@ -15,12 +15,12 @@ public class Employee {
         this.code = code;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String nome) {
+        this.name = name;
     }
 
     public String getAddress() {

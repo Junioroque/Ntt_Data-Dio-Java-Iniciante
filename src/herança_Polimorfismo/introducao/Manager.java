@@ -1,17 +1,19 @@
 package herança_Polimorfismo.introducao;
 
-public class Manager extends Employee {
+public non-sealed class Manager extends Employee {
     private String login;
     private String name;
     private String address;
+    private String password;
     private int age;
     private double salary;
 
     public String getLogin() {
         return login;
     }
-
-    private String password;
+    public void setLogin(String login) {
+        this.login = login;
+    }
 
     public String getPassword() {
         return password;
@@ -19,10 +21,6 @@ public class Manager extends Employee {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
     }
 
     public String getName() {

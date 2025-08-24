@@ -1,6 +1,6 @@
 package herança_Polimorfismo.introducao;
 
-public class Salesman {
+public non-sealed class Salesman extends Employee {
     private double percentPerSold;
 
     public double getPercentPerSold() {
