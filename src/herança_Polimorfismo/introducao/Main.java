@@ -12,21 +12,34 @@ public class Main {
 
         switch (employee) {
             case Manager manager -> {
-                employee.setCode("001");
-                employee.setName("João");
-                ((Manager) employee).setSalary(5000);
-                ((Manager) employee).setLogin("Joao@");
-                ((Manager) employee).setPassword("123");
+                manager.setCode("001");
+                manager.setName("João");
+                manager.setSalary(5000);
+                manager.setLogin("Joao@");
+                manager.setPassword("123");
+                manager.setComission(40);
 
                 System.out.println(employee.getClass().getCanonicalName());
 
-                System.out.println(employee.getName());
-                System.out.println(((Manager) employee).getSalary());
-                System.out.println(((Manager) employee).getLogin());
-                System.out.println(((Manager) employee).getPassword());
-
+                System.out.println(manager.getCode());
+                System.out.println(manager.getName());
+                System.out.println(manager.getSalary());
+                System.out.println(manager.getLogin());
+                System.out.println(manager.getPassword());
+                System.out.println(manager.getComission());
             }
             case Salesman salesman -> {
+                salesman.setCode("002");
+                salesman.setName("Lucas");
+                salesman.setSalary(2500);
+                salesman.setPercentPerSold(10);
+
+                System.out.println(employee.getClass().getCanonicalName());
+
+                System.out.println(salesman.getCode());
+                System.out.println(salesman.getName());
+                System.out.println(salesman.getSalary());
+                System.out.println(salesman.getPercentPerSold());
 
             }
         }
